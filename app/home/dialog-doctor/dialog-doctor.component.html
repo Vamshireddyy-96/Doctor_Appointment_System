@@ -1,0 +1,60 @@
+<h4 style="color: blue; margin-left: 20px; margin-top: 10px;"><b>Add Doctor Details</b></h4>
+<div mat-dialog-content>
+    <form [formGroup]="doctorForm">
+        <mat-form-field appearance="outline">
+            <mat-label>Name:</mat-label>
+            <input matInput placeholder="name" [formControl]="name" required="true">
+            <mat-error *ngIf="name.invalid">{{getErrorName()}}</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="rohini.tambe@yash.com" [formControl]="email" required>
+            <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+
+        <label for=""><h5>Gender:</h5></label><mat-radio-group formControlName="gender">
+            <mat-radio-button *ngFor="let gender of genderList" [value]="gender"> 
+            {{gender}}</mat-radio-button>
+        </mat-radio-group>
+
+        <!-- <mat-form-field appearance="outline" >
+            <mat-label>Gender:</mat-label>
+            <mat-select placeholder="gender">
+                <mat-option value="male">Male</mat-option>
+                <mat-option value="female">Female</mat-option>
+            </mat-select>
+        </mat-form-field> -->
+
+        <mat-form-field appearance="outline">
+            <mat-label>Date of Birth</mat-label>
+            <input matInput [matDatepicker]="picker" formControlName="dateOfBirth">
+            <!-- <mat-hint>MM/DD/YYYY</mat-hint> -->
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label> Specialization:</mat-label>
+            <input matInput placeholder="Dietician" required formControlName="specialization">
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Mobile Number</mat-label>
+            <span matPrefix>+91 &nbsp;</span>
+            <input type="mobileno" matInput placeholder="Mobileno" [formControl]="mobileno" required>
+            <mat-error *ngIf="mobileno.invalid">{{getErrorMob()}}</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label> Address:</mat-label>
+            <textarea matInput placeholder="Address" required formControlName="address"></textarea>
+        </mat-form-field>
+    </form>
+</div>
+<div mat-dialog-actions [align]="'end'">
+    <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+    <button type="submit" mat-raised-button style="margin-left: 8px;" color="primary"
+        (click)="saveDoctor()">{{actionBtn}}</button>
+
+</div>

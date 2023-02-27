@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+#navb a:hover {
+    background-color: aliceblue;
+       color: black;
+       opacity: 0.9;
+     }
+     #navb a {
+       color: #f2f2f2;
+       text-align: center;
+       padding: 14px;
+   
+     }
+     
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.footer{
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height:55px;
+ 
+}

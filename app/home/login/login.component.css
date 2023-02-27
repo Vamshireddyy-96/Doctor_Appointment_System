@@ -1,0 +1,32 @@
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
+
+.background-radial-gradient{
+    background-color: hsl(175, 42%, 90%);
+    background-image: radial-gradient(650px circle at 0% 0%,
+        hsl(218, 51%, 82%) 15%,
+        hsl(217, 54%, 84%) 35%,
+        hsl(218, 41%, 20%) 75%,
+        hsl(218, 41%, 19%) 80%,
+        transparent 100%),
+      radial-gradient(1250px circle at 100% 100%,
+        hsl(218, 36%, 74%) 15%,
+        hsl(218, 28%, 74%) 35%,
+        hsl(218, 41%, 20%) 75%,
+        hsl(218, 41%, 19%) 80%,
+        transparent 100%);
+  }
+  

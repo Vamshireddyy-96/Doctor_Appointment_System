@@ -1,0 +1,102 @@
+<!-- Nav Bar Started  -->
+<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+    <a class="navbar-brand" routerLink="/homepage">Doctor Appointment System</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb"
+        aria-expanded="true">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navb" class="navbar-collapse collapse hide">
+        <ul class="navbar-nav" style="margin-left: 180px;">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/appointment">Book Appointment</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/billlist">Booking List</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/login"><span class="fas fa-sign-in-alt"></span> Sign Out</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- Nav Bar End  -->
+
+<!-- Actual Page Start here   -->
+<div class="bg">
+    <div class="appointment">
+        <h2>Appointment Booking</h2>
+        <form>
+            <div>
+                <br>
+                <div>
+                    <label>Patient Name:</label>
+                    <input type="text" class="form-control" [(ngModel)]="patientname" name="patientname">
+                </div>
+                <br>
+                <div>
+                    <label>Doctor Name:</label>
+                    <select class="form-control" name="doctorname" [(ngModel)]="doctorname">
+                        <option>Select</option>
+                        <option value="Dr. (Colonel) A.K Mehta">Dr. (Colonel) A.K Mehta</option>
+                        <option value="Dr. Sumitpal Bhatti">Dr. Sumitpal Bhatti</option>
+                        <option value="Dr. Arunesh Dutt Upadhyay">Dr. Arunesh Dutt Upadhyay</option>
+                        <option value="Dr. Abhay Somani">Dr. Abhay Somani</option>
+                        <option value="Dr. Sarvesh R Jaiswal">Dr. Sarvesh R Jaiswal</option>
+                        <option value="Dr. Sabnis Manish">Dr. Sabnis Manish</option>
+                        <option value="Dr.Chinmay Pramod Umarji">Dr.Chinmay Pramod Umarji</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label>Designation:</label>
+                    <select class="form-control" name="designation" [(ngModel)]="designation">
+                        <option>select</option>
+                        <option value="General Physician">General Physician</option>
+                        <option value="ENT">ENT </option>
+                        <option value="MBBS">MBBS</option>
+                        <option value="Heart Specialist">Heart Specialist</option>
+                        <option value="Dentist">Dentist</option>
+                        <option value="Nerves surgery specialist">Nerves surgery specialist</option>
+                        <option value="Gynecologist/obstetrician">Gynecologist/obstetrician</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label>Doctor Availibilty :</label>
+                    <select class="form-control" [(ngModel)]="doctorAvailablity" name="doctorAvailablity">
+                        <option>Select</option>
+                        <option value="Available Today">Available Today</option>
+                        <option value="Available Tomorrow">Available Tomorrow</option>
+                        <option value="Available in next 3 days">Available in next 3 days</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+
+                    <label>Time Slot:</label>
+                    <select class="form-control" name="timeslot" [(ngModel)]="timeslot">
+                        <option>Select</option>
+                        <option value="10:00 AM - 11:00 AM">10:00 AM - 11:00 AM</option>
+                        <option value="11:00 AM - 12:00 PM">11:00 AM - 12:00 PM</option>
+                        <option value="12:00 PM - 01:00 PM">12:00 PM - 01:00 PM</option>
+                        <option value="02:00 PM - 03:00 PM">02:00 PM - 03:00 PM</option>
+                        <option value="03:00 PM - 04:00 PM">03:00 PM - 04:00 PM</option>
+                        <option value="04:00 PM - 05-00 PM">04:00 PM - 05-00 PM</option>
+                        <option value="05:00 PM - 06 :00 PM">05:00 PM - 06 :00 PM</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label>Description</label>
+                    <input type="text" class="form-control" [(ngModel)]="description" name="description">
+                </div>
+                <br>
+                <div>
+                    <button (click)="saveAppointment()">BookAppointment</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

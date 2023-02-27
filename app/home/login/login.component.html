@@ -1,0 +1,68 @@
+<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+    <a class="navbar-brand" routerLink="#">Doctor Appointment System</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb"
+        aria-expanded="true">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navb" class="navbar-collapse collapse hide">
+        <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item">
+
+                <a class="nav-link" routerLink="/register"><span class="fas fa-user"></span> Sign Up</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/login"><span class="fas fa-sign-in-alt"></span> Login</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<section class="background-radial-gradient overflow-hidden">
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="col"></div>
+            <div class="col-4">
+                <div class="card shadow" style="width: 25rem">
+                    <div class="card-body">
+                        <!-- Sign In Form  -->
+                        <form>
+                            <div class="mb-4">
+                                <h4 class="text-dark text-muted" style="text-align: center;">Sign in</h4>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email</label>
+                                <input type="email" class="form-control" name="email" [(ngModel)]="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" name="password" [(ngModel)]="password">
+                            </div>
+                            <div class="text-center text-lg-start mt-4 pt-2">
+                                <button type="button" class="btn btn-primary btn-lg" (click)=login()
+                                    style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+                                <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="/register"
+                                        class="link-danger">Register</a></p>
+                            </div>
+                            <div class="divider d-flex align-items-center my-4">
+                                <p class="text-center fw-bold mx-3 mb-0">Or</p>
+                            </div>
+                            <div class="row mt-2">
+                                <a (click)="signInWithGoogle()" style="text-decoration: none;cursor: pointer;">
+                                    <div class="card shadow text-center">
+                                        <div class="card-body">
+                                            <img src="../../../assets/icons8-google-48.png" alt="" height="24px"
+                                                width="24px"> Sign In with Google
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </form>
+                        <!--  End Of Sign in Form -->
+                    </div>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+    <br>
+</section>

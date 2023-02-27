@@ -1,0 +1,129 @@
+<!-- Navigation Bar Start  -->
+<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+  <a class="navbar-brand" routerLink="#">Doctor Appointment System</a>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb"
+    aria-expanded="true">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div id="navb" class="navbar-collapse collapse hide">
+    <ul class="navbar-nav" style="margin-left: 80px;">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/patient">Patient Manage</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/doctor">Doctor Manage</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/bill-manage">Bill Manage</a>
+    </li>
+    </ul>
+    <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/login"><span class="fas fa-sign-in-alt"></span> Sign Out</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="addpatient">
+  <button class="btn btn-success" type="submit" data-toggle="modal" data-target="#exampleModal">Add
+    Doctor</button>
+</div>
+<!-- Navigation Bar End  -->
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Designation</th>
+      <th>Phone No</th>
+      <th>Address</th>
+      <th>Email</th>
+      <th>DOB</th>
+      <th>Gender</th>
+      <th>Age</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let doctor of alldoctor">
+      <td>{{doctor.id}}</td>
+      <td>{{doctor.dName}}</td>
+      <td>{{doctor.dDesignation}}</td>
+      <td>{{doctor.dPhoneNo}}</td>
+      <td>{{doctor.dAddress}}</td>
+      <td>{{doctor.dEmail}}</td>
+      <td>{{doctor.dDob}}</td>
+      <td>{{doctor.dSex}}</td>
+      <td>{{doctor.dAge}}</td>
+      <td>
+        <input type="button" value="Edit" (click)="EditDoctor(doctor)" data-toggle="modal" data-target="#exampleModal"
+          class="btn btn-success me-2" />
+        <input type="button" value="Delete" (click)="DeleteDoctor(doctor)" class="btn btn-danger" />
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!-- Button trigger modal -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Doctor Management</h5>
+        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="row g-3" [formGroup]="formValue">
+          <div class="col-md-6">
+            <label for="inputName" class="form-label">Name</label>
+            <input type="text" formControlName="dName" class="form-control" id="inputName">
+          </div>
+          <div class="col-md-6">
+            <label for="inputdesignation" class="form-label">Designation</label>
+            <select class="form-control" formControlName="dDesignation" id="inputdesignation">
+              <option value="Anatomy">Anatomy</option>
+              <option value="Dermatology">Dermatology</option>
+              <option value="Gynaecologist">Gynaecologist</option>
+              <option value="Nephrologist">Nephrologist</option>
+              <option value="Orthopedics">Orthopedics</option>
+              <option value="Pediatrician">Pediatrician</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="inputPhoneNo" class="form-label">Phone No</label>
+            <input type="text" formControlName="dPhoneNo" class="form-control" id="inputPhoneNo">
+          </div>
+          <div class="col-md-6">
+            <label for="inputAddress" class="form-label">Address</label>
+            <input type="text" formControlName="dAddress" class="form-control" id="inputAddress">
+          </div>
+          <div class="col-md-6">
+            <label for="inputEmail" class="form-label">Email</label>
+            <input type="email" formControlName="dEmail" class="form-control" id="inputEmail">
+          </div>
+          <div class="col-md-6">
+            <label for="inputDob" class="form-label">DOB</label>
+            <input type="date" class="form-control" id="inputDob" formControlName="dDob" >
+          </div>
+          
+          <div class="col-md-6">
+            <label for="inputGender" class="form-label">Gender</label>
+            <select class="form-control" formControlName="dSex" id="inputGender">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="inputAge" class="form-label">Age</label>
+            <input type="text" class="form-control" formControlName="dAge" id="inputAge">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+        <button *ngIf="btnSaveShow" type="button" class="btn btn-primary" (click)="AddDoctor()">Register</button>
+        <button *ngIf="btnUpdateShow" type="button" class="btn btn-primary" (click)="UpdateDoctor()">Update</button>
+      </div>
+    </div>
+  </div>
+</div>

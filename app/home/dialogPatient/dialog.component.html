@@ -1,0 +1,49 @@
+<h1 mat-dialog-title>Add Patient form</h1>
+<div mat-dialog-content>
+    <form [formGroup]="patientForm">
+        <mat-form-field appearance="outline">
+            <mat-label>Patient Name</mat-label>
+            <input formControlName="pName" matInput placeholder="Name"/>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Phone Number</mat-label>
+            <input formControlName="pPhoneNo" matInput type="number" placeholder="Mob No.">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Address</mat-label>
+            <textarea formControlName="pAddress"matInput></textarea>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>DOB</mat-label>
+            <input formControlName="pDob" matInput [matDatepicker]="picker">
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Patient Email</mat-label>
+            <input formControlName="pEmail" matInput placeholder="email"/>
+        </mat-form-field>
+
+        <label for="">Gender</label>
+          <mat-radio-group formControlName="pSex" >
+            <mat-radio-button *ngFor="let pSex of genderList" [value]="pSex">
+             {{pSex}}
+            </mat-radio-button>
+          </mat-radio-group>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Patient Age</mat-label>
+            <input formControlName="pAge" matInput placeholder="pAge"/>
+        </mat-form-field>
+          
+        
+    </form>
+</div>
+<div mat-dialog-action [align]="'end'">
+    <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+    <button style="margin-left: 8px;" mat-raised-button color="primary" (click)="addPatient()">{{actionbtn}}</button>
+</div>

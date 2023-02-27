@@ -1,0 +1,467 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "name": "pName",
+      "email": "email",
+      "phone": "phone",
+      "website": "website"
+    },
+    {
+      "id": 2,
+      "name": "pName",
+      "email": "email",
+      "phone": "phone",
+      "website": "website"
+    },
+    {
+      "id": 3,
+      "name": "pName",
+      "email": "email",
+      "phone": "phone",
+      "website": "website"
+    },
+    {
+      "id": 1674771429851,
+      "name": "lkjlk",
+      "role": "jlkj",
+      "address": "jlkj",
+      "email": "lkj",
+      "city": "lkj",
+      "password": "lkjkl"
+    },
+    {
+      "id": 1674771679688,
+      "name": "khkjh",
+      "role": "Patient",
+      "address": ",mn,m",
+      "email": ",n,n,mn,m",
+      "city": "n,mn",
+      "password": "n,mn"
+    }
+  ],
+  "patient": [
+    {
+      "id": 16748361556765,
+      "pName": "vamshi",
+      "pPhoneNo": 8888854704,
+      "pAddress": "margapatta",
+      "pDob": "2023-01-10T18:30:00.000Z",
+      "pEmail": "vamshireddy@gmail.com",
+      "pSex": "Male",
+      "pAge": "25"
+    },
+    {
+      "id": 16748361556098,
+      "pName": "umesh",
+      "pPhoneNo": 8888854453,
+      "pAddress": "pune",
+      "pDob": "2023-01-10T18:30:00.000Z",
+      "pEmail": "umeshreddy@gmail.com",
+      "pSex": "Male",
+      "pAge": "25"
+    },
+    {
+      "id": 167483615567658,
+      "pName": "rahul",
+      "pPhoneNo": 8888854234,
+      "pAddress": "vijayawada",
+      "pDob": "2023-01-10T18:30:00.000Z",
+      "pEmail": "rahulakumar@gmail.com",
+      "pSex": "Male",
+      "pAge": "28"
+    },
+    {
+      "id": 167483615567453,
+      "pName": "jeevan",
+      "pPhoneNo": 8888854234,
+      "pAddress": "hyderbabad",
+      "pDob": "2023-01-10T18:30:00.000Z",
+      "pEmail": "jeevankumar@gmail.com",
+      "pSex": "Male",
+      "pAge": "26"
+    },
+    {
+      "id": 167483615567234,
+      "pName": "hari",
+      "pPhoneNo": 9955667788,
+      "pAddress": "mumbai",
+      "pDob": "2023-01-10T18:30:00.000Z",
+      "pEmail": "harikumar@gmail.com",
+      "pSex": "Male",
+      "pAge": "21"
+    },
+    {
+      "id": 1675063445890,
+      "pName": "Yogesh Kale",
+      "pPhoneNo": "8888854704",
+      "pAddress": "Magarpatta",
+      "pDob": "1994-09-23",
+      "pEmail": "kale.yogesh@yash.com",
+      "pSex": "Male",
+      "pAge": "28"
+    },
+    {
+      "id": 1675063687667,
+      "pName": "Rohini",
+      "pPhoneNo": "7737373737",
+      "pAddress": "Hadapsar Pune",
+      "pDob": "2001-12-12",
+      "pEmail": "rohinitambe95@gmail.com",
+      "pSex": "Female",
+      "pAge": "23"
+    },
+    {
+      "id": 1675063687674,
+      "pName": "Ashok",
+      "pPhoneNo": "8844556623",
+      "pAddress": "punjab",
+      "pDob": "2001-12-12",
+      "pEmail": "Ashokkumar123@gmail.com",
+      "pSex": "male",
+      "pAge": "23"
+    },
+    {
+      "id": 1675063687674,
+      "pName": "Ashok",
+      "pPhoneNo": "8844556623",
+      "pAddress": "punjab",
+      "pDob": "2001-12-12",
+      "pEmail": "Ashokkumar123@gmail.com",
+      "pSex": "male",
+      "pAge": "23"
+    },
+    {
+      "id": 1675073867979,
+      "pName": "Amir",
+      "pPhoneNo": "8976564323",
+      "pAddress": "Baner Pune",
+      "pDob": "2000-09-23",
+      "pEmail": "yogeshkale230@gmail.com",
+      "pSex": "Male",
+      "pAge": "22"
+    }
+  ],
+  "doctor": [
+    {
+      "id": 1668651813228,
+      "dName": "Rahual",
+      "dPhoneNo": "980980808098",
+      "dAddress": "warangal",
+      "dDob": "1999-01-17",
+      "dEmail": "rahual@gmail.com",
+      "dSex": "Male",
+      "dAge": "38",
+      "dDesignation": "Anatomy"
+    },
+    {
+      "id": 16686518132748,
+      "dName": "Saikumar",
+      "dPhoneNo": "980980808098",
+      "dAddress": "Vijaywada",
+      "dDob": "1989-01-17",
+      "dEmail": "saikumar@gmail.com",
+      "dSex": "Male",
+      "dAge": "48",
+      "dDesignation": "Anatomy"
+    },
+    {
+      "id": 1674971813228,
+      "dName": "Sam",
+      "dPhoneNo": "980980808098",
+      "dAddress": "Pune",
+      "dDob": "2023-01-17",
+      "dEmail": "sam@gmail.com",
+      "dSex": "Male",
+      "dAge": "22",
+      "dDesignation": "Anatomy"
+    },
+    {
+      "id": 1675056975654,
+      "dName": "Kumar",
+      "dPhoneNo": "9955992345",
+      "dAddress": "hadaspar",
+      "dDob": "1996-09-22",
+      "dEmail": "kumar12345@gmail.com",
+      "dSex": "Male",
+      "dAge": "30",
+      "dDesignation": "mbbs"
+    },
+    {
+      "id": 1689956975619,
+      "dName": "Rahim",
+      "dPhoneNo": "9988358238",
+      "dAddress": "kadapa",
+      "dDob": "1995-12-22",
+      "dEmail": "Sumanth12345@gmail.com",
+      "dSex": "Male",
+      "dAge": "45",
+      "dDesignation": "Gynaecologist"
+    },
+    {
+      "id": 1689956975619,
+      "dName": "Sumanth",
+      "dPhoneNo": "6788338738",
+      "dAddress": "vijaywada",
+      "dDob": "1222-12-22",
+      "dEmail": "Sumanth12345@gmail.com",
+      "dSex": "Male",
+      "dAge": "35",
+      "dDesignation": "Gynaecologist"
+    },
+    {
+      "id": 1877505697654,
+      "dName": "Samraj",
+      "dPhoneNo": "9955992345",
+      "dAddress": "warangal",
+      "dDob": "1995-09-24",
+      "dEmail": "samraj12345@gmail.com",
+      "dSex": "Male",
+      "dAge": "28",
+      "dDesignation": "mbbs"
+    },
+    {
+      "id": 1675056975619,
+      "dName": "sameer3",
+      "dPhoneNo": "8888890909",
+      "dAddress": "Pune",
+      "dDob": "1222-12-22",
+      "dEmail": "sam12345@gmail.com",
+      "dSex": "Male",
+      "dAge": "800",
+      "dDesignation": "Gynaecologist"
+    },
+    {
+      "id": 1675071685775,
+      "dName": "Shyam Kumar",
+      "dPhoneNo": "7878989889",
+      "dAddress": "Karve Nagar Pune",
+      "dDob": "2000-04-23",
+      "dEmail": "yogeshkale2305@gmail.com",
+      "dSex": "Male",
+      "dAge": "22",
+      "dDesignation": "Dermatology"
+    }
+  ],
+  "posts": [
+    {
+      "id": 2,
+      "name": "jgHJGHJGhjgHJGJH",
+      "role": "HJGHJ",
+      "address": "HJ",
+      "email": "GJHG",
+      "city": "GHJGHJ",
+      "password": "HJG"
+    }
+  ],
+  "appointment": [
+    {},
+    {
+      "id": 1675014351431,
+      "patientname": "Yogesh",
+      "doctorname": "Yogesh",
+      "description": "Cold and cough",
+      "designation": "ENT",
+      "doctorAvailablity": "Available Tomorrow",
+      "timeslot": "03:00 PM - 04:00 PM"
+    },
+    {
+      "id": 1675057388475,
+      "patientname": "vamshi",
+      "doctorname": "asoka sharma",
+      "description": "Cold",
+      "designation": "pysican",
+      "doctorAvailablity": "Available Today",
+      "timeslot": "03:00 PM - 04:00 PM"
+    },
+    {
+      "id": 1675054521862,
+      "patientname": "Yogesh",
+      "doctorname": "Yogesh",
+      "description": "Cold and cough",
+      "designation": "MBBS",
+      "doctorAvailablity": "Available Tomorrow",
+      "timeslot": "10:00 AM - 11:00 AM"
+    },
+    {
+      "id": 1675057148006,
+      "patientname": "Yogesh",
+      "doctorname": "Yogesh",
+      "description": "Cold and cough",
+      "designation": "Heart Specialist",
+      "doctorAvailablity": "Available Today",
+      "timeslot": "02:00 PM - 03:00 PM"
+    },
+    {
+      "id": 1675057388475,
+      "patientname": "Yogesh",
+      "doctorname": "Yogesh",
+      "description": "Cold and cough",
+      "designation": "Heart Specialist",
+      "doctorAvailablity": "Available Today",
+      "timeslot": "02:00 PM - 03:00 PM"
+    },
+    {
+      "id": 1675059473317,
+      "patientname": "Yogesh",
+      "doctorname": "Yogesh",
+      "description": "Cold and cough",
+      "designation": "Heart Specialist",
+      "doctorAvailablity": "Available Tomorrow",
+      "timeslot": "12:00 PM - 01:00 PM"
+    },
+    {
+      "id": 1675059603373,
+      "patientname": "Yogesh",
+      "doctorname": "Yogesh",
+      "description": "Cold and cough",
+      "designation": "Heart Specialist",
+      "doctorAvailablity": "Available Tomorrow",
+      "timeslot": "04:00 PM - 05-00 PM"
+    },
+    {
+      "id": 1675059698528,
+      "patientname": "Yogesh",
+      "doctorname": "Yogesh",
+      "description": "Cold and cough",
+      "designation": "Dentist",
+      "doctorAvailablity": "Available in next 3 days",
+      "timeslot": "03:00 PM - 04:00 PM"
+    },
+    {
+      "id": 1675059698528,
+      "patientname": "shrama",
+      "doctorname": "hari krishna",
+      "description": "fever",
+      "designation": "Mbbs",
+      "doctorAvailablity": "Available in today",
+      "timeslot": "04:00 PM - 05:00 PM"
+    },
+    {
+      "id": 16750596985565,
+      "patientname": "hari",
+      "doctorname": "krishna kumar",
+      "description": "body pains",
+      "designation": "Mbbs",
+      "doctorAvailablity": "Available in today",
+      "timeslot": "02:00 PM - 05:00 PM"
+    },
+    {
+      "id": 1675060757887,
+      "patientname": "umesh",
+      "doctorname": "Satish",
+      "description": "back pain",
+      "designation": "MBBS",
+      "doctorAvailablity": "Available today",
+      "timeslot": "11:00 PM - 02:00 PM"
+    },
+    {
+      "id": 1675060757887,
+      "patientname": "Satish",
+      "doctorname": "Satish",
+      "description": "Cold and cough",
+      "designation": "MBBS",
+      "doctorAvailablity": "Available Tomorrow",
+      "timeslot": "12:00 PM - 01:00 PM"
+    },
+    {
+      "id": 1675062057643,
+      "patientname": "Yogesh",
+      "doctorname": "Yogesh",
+      "description": "Cold and cough",
+      "designation": "MBBS",
+      "doctorAvailablity": "Available Today",
+      "timeslot": "02:00 PM - 03:00 PM"
+    },
+    {
+      "id": 1675064032918,
+      "patientname": "Yogesh",
+      "doctorname": "Yogesh",
+      "description": "Cold and cough",
+      "designation": "MBBS",
+      "doctorAvailablity": "Available Tomorrow",
+      "timeslot": "03:00 PM - 04:00 PM"
+    },
+    {
+      "id": 1675068552325,
+      "patientname": "vamsi",
+      "doctorname": "vamsi",
+      "description": "Fever",
+      "designation": "Nerves surgery specialist",
+      "doctorAvailablity": "Available in next 3 days",
+      "timeslot": "12:00 PM - 01:00 PM"
+    },
+    {
+      "id": 1675072011336,
+      "patientname": "Ramesh",
+      "doctorname": "Ramesh",
+      "description": "Cold and cough",
+      "designation": "Heart Specialist",
+      "doctorAvailablity": "Available Tomorrow",
+      "timeslot": "04:00 PM - 05-00 PM"
+    },
+    {
+      "id": 1675073968057,
+      "patientname": "Rajesh",
+      "doctorname": "Rajesh",
+      "description": "Fever",
+      "designation": "MBBS",
+      "doctorAvailablity": "Available Today",
+      "timeslot": "12:00 PM - 01:00 PM"
+    }
+  ],
+  "billlist": [
+    {
+      "id": 1675062059226,
+      "billNo": 240670,
+      "patientName": "Yogesh",
+      "amount": 500
+    },
+    {
+      "id": 1675064032935,
+      "billNo": 42169,
+      "patientName": "Yogesh",
+      "amount": 500
+    },
+    {
+      "id": 1675068552346,
+      "billNo": 105898,
+      "patientName": "vamsi",
+      "amount": 500
+    },
+    {
+      "id": 1675072011358,
+      "billNo": 252581,
+      "patientName": "Ramesh",
+      "amount": 500
+    },
+    {
+      "id": 1675073968058,
+      "billNo": 217882,
+      "patientName": "Rajesh",
+      "amount": 500
+    }
+  ],
+  "doctorList": [
+    {
+      "name": "Ram Patil",
+      "email": "rampatil@gmail.com",
+      "gender": "Male",
+      "dateOfBirth": "2017-01-08T18:30:00.000Z",
+      "specialization": "Neurologist",
+      "mobileno": "9876545678",
+      "address": "Solapur",
+      "id": 4
+    },
+    {
+      "name": "Sonu",
+      "email": "sonu.shinde@gmail.com",
+      "gender": "Female",
+      "dateOfBirth": "1994-02-03T18:30:00.000Z",
+      "specialization": "Physician (MD Medician)",
+      "mobileno": "9876545678",
+      "address": "Nashik",
+      "id": 5
+    }
+  ]
+}

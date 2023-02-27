@@ -1,0 +1,63 @@
+<!-- Nav Bar Started  -->
+<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+    <a class="navbar-brand" routerLink="/homepage">Doctor Appointment System</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb"
+        aria-expanded="true">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navb" class="navbar-collapse collapse hide">
+        <ul class="navbar-nav" style="margin-left: 180px;">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/appointment">Book Appointment</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/billlist">BillList</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/invoice">Invoice</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/login"><span class="fas fa-sign-in-alt"></span> Sign Out</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- Nav Bar End  -->
+
+<!-- Actual Page Start here   -->
+
+<div class="payment">
+    <div class="row">
+        <div class="col-md-7">
+            <div class="left border">
+                <div class="row">
+                    <span class="header">Payment</span>
+                    <div class="icons">
+                        <img src="https://img.icons8.com/color/48/000000/visa.png" />
+                        <img src="https://img.icons8.com/color/48/000000/mastercard-logo.png" />
+                        <img src="https://img.icons8.com/color/48/000000/maestro.png" />
+                    </div>
+                </div>
+                <form>
+                    <span>Cardholder's name:</span>
+                    <input placeholder="Linda Williams">
+                    <span>Card Number:</span>
+                    <input placeholder="0125 6780 4567 9909">
+                    <div class="row">
+                        <div class="col-4"><span>Expiry date:</span>
+                            <input placeholder="YY/MM">
+                        </div>
+                        <div class="col-4"><span>CVV:</span>
+                            <input id="cvv">
+                        </div>
+                    </div>
+                    <input type="checkbox" id="save_card" class="align-left">
+                    <label for="save_card">Save card details to wallet</label>
+                    <button class="btn" (click)="payDone()">Pay</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
